@@ -1,0 +1,28 @@
+FD.test({
+  id: 'testB',
+  part: 'B',
+  Q: [
+    ['projector', 'Which is a typical use of a data projector?', ['Giving presentations in classrooms and business meetings', 'Printing invoices with carbon copies', 'Drawing CAD plans on large paper', 'Opening a valve in a greenhouse'], 'Also home entertainment, such as watching television or playing games.', 'projector'],
+    ['projector', 'The brightness of a projector bulb is measured in…', ['lumens', 'pixels', 'watts per page', 'inches'], 'Bulbs are also expensive to replace.', 'projector'],
+    ['projector', 'Why does a projector in a sunny classroom need a brighter bulb?', ['So the picture is not washed out by the light in the room', 'So it uses less electricity', 'So the bulb lasts longer', 'So it can play sound'], 'More lumens give a clearer picture in a bright room.', 'projector'],
+    ['projector', 'Optical zoom…', ['focuses a lens in order to zoom in', 'enlarges part of an image', 'makes the pixels bigger', 'reduces the resolution'], 'The picture stays sharp.', 'projector'],
+    ['projector', 'Why can digital zoom make a picture look blocky?', ['It enlarges part of the image, so the existing pixels get bigger', 'The lens moves too far', 'The bulb gets dimmer', 'It adds more pixels'], 'It only produces the effect of zooming in.', 'projector'],
+    ['projector', 'Which feature matters most for a person travelling on business?', ['Portability: small and light', 'A very expensive bulb', 'Surround sound', 'Carbon copies'], 'Smaller, lighter projectors are easier to move around.', 'projector'],
+    ['speaker', 'Stereo sound comes from…', ['two sides: left and right', 'a single speaker', 'four or more sides', 'the ceiling only'], 'A pair of speakers is needed.', 'speaker'],
+    ['speaker', 'Surround sound comes from…', ['four or more sides, all around the viewer', 'one speaker', 'only the left side', 'only the front'], 'Used in home entertainment systems.', 'speaker'],
+    ['speaker', 'Mono sound is sound that comes from…', ['a single speaker', 'two speakers', 'five speakers', 'headphones only'], 'You cannot tell where a sound is.', 'speaker'],
+    ['speaker', 'What gives surround sound its spatial awareness?', ['An amplifier delivering different levels of sound to each speaker', 'Using only one speaker', 'Turning the volume to maximum', 'A higher screen resolution'], 'Spatial awareness = the impression of a realistic space.', 'speaker'],
+    ['speaker', 'Where would a single, small, low-quality speaker most likely be found?', ['A smoke alarm', 'A cinema', 'A recording studio', 'A home cinema system'], 'Alert systems such as alarms and buzzers.', 'speaker'],
+    ['actuator', 'Control devices are also known as…', ['actuators', 'sensors', 'plotters', 'peripherals for input'], 'They make something happen in the real physical world.', 'control'],
+    ['actuator', 'Which of these is an actuator?', ['A heater', 'A temperature sensor', 'A keyboard', 'A webcam'], 'Valves, pistons, heaters, coolers and motors.', 'control'],
+    ['actuator', 'In an automatic greenhouse, which device is the output?', ['The motor that opens the window', 'The temperature sensor', 'The light sensor', 'The moisture sensor'], 'Sensors are inputs; actuators are outputs.', 'control'],
+    ['actuator', 'Robots use actuators powered by…', ['electricity, chemicals and compressed air', 'lumens and pixels', 'toner and ink', 'carbon paper'], 'See Figure 1.71.', 'control'],
+  ],
+  LONG: [
+    { q: 'State <b>three</b> features of data projectors.', m: 3, s: ['Light bulbs with different brightness levels (lumens) / expensive to replace (1).', 'Resolution (1).', 'Zoom functionality: optical or digital zoom (1).', 'Portability: smaller, lighter projectors are easier to move (1).', 'Max 3.'], link: ['projector', 'See data projectors again'] },
+    { q: 'Explain the difference between optical zoom and digital zoom.', m: 2, s: ['Optical zoom focuses a lens to zoom in on an object (so the image stays sharp) (1).', 'Digital zoom enlarges part of the image to produce the effect of zooming in (so it can look blocky/pixelated) (1).'] },
+    { q: 'A family is setting up a home entertainment system. Explain why they might choose surround sound rather than stereo sound.', m: 3, s: ['Surround sound comes from four or more sides / many speakers (1).', 'An amplifier sends different levels of sound to each speaker (1).', 'Sounds from a film come from all around the viewer, as in real life (1)…', '…giving spatial awareness / a more realistic experience (1).', 'Stereo only gives left and right (1).', 'Max 3.'], link: ['speaker', 'Compare the types of sound again'] },
+    { q: 'Give <b>two</b> devices in the home that use a low-quality speaker and explain why low quality is enough.', m: 3, s: ['Any two, e.g. microwave, smoke alarm, washing machine, oven timer, digital watch, door buzzer (1 + 1).', 'They only give simple audio feedback / alerts such as beeps, so high quality is not needed (1).'] },
+    { q: 'Describe what a control device is and give <b>two</b> examples.', m: 3, s: ['A control device / actuator is a component of a system that makes something happen in the real physical world (1).', 'They are often mechanical (1).', 'Any two of: valve, piston, heater, cooler, motor (1 each).', 'Max 3.'] },
+  ],
+});

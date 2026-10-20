@@ -1,0 +1,28 @@
+FD.test({
+  id: 'testA',
+  part: 'A',
+  Q: [
+    ['output', 'What do output peripherals do?', ['Output the results of the computer’s processing', 'Enter data into the computer', 'Store data when the power is off', 'Connect the computer to the internet'], 'For example as an electronic display, printed text, video, audio or touch.', 'monitor'],
+    ['output', 'Which of these is a tactile form of output?', ['A phone that vibrates', 'A printed report', 'A film on a projector', 'Music from speakers'], 'Tactile means touch.', 'monitor'],
+    ['monitor', 'A monitor is sold as “27-inch”. What has been measured?', ['The screen diagonally, from corner to corner', 'The width of the screen', 'The height of the screen', 'The depth of the monitor'], 'Screen size is measured diagonally.', 'monitor'],
+    ['monitor', 'Monitor resolution is measured in…', ['pixels', 'lumens', 'pages per minute', 'centimetres'], 'For example 1920 × 1080 pixels.', 'monitor'],
+    ['monitor', 'Which is an energy efficiency measure of monitors?', ['Going into low-power standby mode if no input is detected', 'Using a touch screen', 'Having a bigger screen', 'Increasing the resolution'], 'The monitor wakes up when the user moves the mouse or presses a key.', 'monitor'],
+    ['printer', 'Which printer is sometimes called an ‘impact’ printer?', ['Dot matrix', 'Inkjet', 'Laser', '3D printer'], 'It hits the paper through a ribbon of ink.', 'printer'],
+    ['printer', 'Why is a dot matrix printer used when multiple copies are required?', ['The paper can have carbon copy layers, so it makes several copies as it prints', 'It is the fastest printer', 'It prints the highest quality colour', 'It has the lowest printer cost'], 'The impact goes through every layer.', 'printer'],
+    ['printer', 'How does an inkjet printer form images or text?', ['It sprays tiny dots of ink onto the paper', 'It heats toner onto the paper', 'It hits a ribbon of ink', 'It moves a pen across the paper'], 'Cyan, magenta, yellow and black dots.', 'printer'],
+    ['printer', 'Which printer has the highest cost per copy?', ['Inkjet', 'Dot matrix', 'Laser', 'All the same'], 'Table 1.3: dot matrix low, laser medium, inkjet high.', 'printer'],
+    ['printer', 'In a laser printer, what is used to discharge certain points on the drum?', ['A laser', 'A ribbon', 'A pen', 'A heater'], 'Charged toner is then attracted to those points.', 'printer'],
+    ['printer', 'An office needs high-volume printing of the highest quality. Which printer?', ['Laser', 'Dot matrix', 'Inkjet', 'Plotter'], 'Laser printers are the fastest with the highest quality.', 'printer'],
+    ['3D', '3D printers build models by adding layers of heated material…', ['from the bottom of the model all the way to the top', 'from the top to the bottom', 'from the inside out', 'all at the same time'], '3D-printed models take a long time to create.', 'print3d'],
+    ['3D', 'Which of these has been 3D printed, according to the book?', ['Artificial limbs', 'Carbon copies', 'Surround sound', 'Virus definitions'], 'Also aeroplane parts, prototype car models, pasta and chocolate.', 'print3d'],
+    ['plotter', 'What does a plotter draw?', ['High-quality CAD images on large sheets of paper', 'Photographs on glossy paper', 'Several carbon copies of a document', 'Text on a screen'], 'It is used by architects, engineers, product designers and cartographers.', 'plotter'],
+    ['plotter', 'What can a plotter use instead of a pen to make stickers?', ['A cutter attachment', 'A laser', 'A toner cartridge', 'A ribbon'], 'The cutter cuts vinyl.', 'plotter'],
+  ],
+  LONG: [
+    { q: 'State <b>three</b> features of monitors.', m: 3, s: ['Screen size, measured diagonally (1).', 'Resolution, measured in pixels (1).', 'Energy efficiency, e.g. a low-power standby mode if no input is detected (1).', 'Accept: touch screen technology (1).', 'Max 3.'], link: ['monitor', 'See monitors again'] },
+    { q: 'Describe how a laser printer prints a page.', m: 4, s: ['A rotating drum holds an electrical charge (1).', 'A laser discharges certain points on the drum / draws the image (1).', 'Electrically charged toner is attracted to those points (1).', 'The paper passes over the drum (and the toner moves onto it) (1).', 'The toner is heated onto the paper (1).', 'Max 4.'], link: ['printer', 'See the laser printer again'] },
+    { q: 'A car repair garage needs to print invoices. Each invoice needs a copy for the customer and a copy for the office. Explain why a dot matrix printer is suitable.', m: 2, s: ['The paper can have carbon copy layers (1)…', '…so several copies of the same invoice are made as it prints / it is cheap per copy (1).'] },
+    { q: 'Explain how a 3D printer creates a model and give <b>one</b> example of an item that can be 3D printed.', m: 3, s: ['It creates a real-life version of a digital model (1).', 'It adds layers of heated material (1) from the bottom of the model to the top (1).', 'Example: aeroplane parts / artificial limbs / prototype car models / food such as pasta or chocolate (1).', 'Max 3.'] },
+    { q: 'Describe how a plotter draws an image.', m: 2, s: ['It moves a pen across the paper to draw the lines (1).', 'The pen is raised away from / lowered onto the paper (1).', 'Some roll the paper backwards and forwards (1).', 'Max 2.'] },
+  ],
+});
