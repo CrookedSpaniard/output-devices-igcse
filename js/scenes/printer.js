@@ -34,7 +34,7 @@ FD.add({
     FD.dotCols('OK').forEach((ys, x) => ys.forEach((y) => ok.add(`${x + 2},${y + 1}`)));
 
     el.innerHTML = `
-      <div class="sim pr">
+      <div class="sim prn">
         <div class="ptabs" role="group" aria-label="Simulations">
           <button data-p="cmp">📋 Three types</button><button data-p="dot">🔨 Dot matrix</button><button data-p="ink">💧 Inkjet</button><button data-p="laser">⚡ Laser</button><button data-p="pick">🤔 Which printer?</button>
         </div>
@@ -51,9 +51,9 @@ FD.add({
         <div data-panel="dot" class="sim" hidden>
           <div class="sim-box pr-dotbox">
             <svg viewBox="0 0 420 200" aria-label="A dot matrix print head printing through a ribbon onto paper with carbon copies">
-              <g class="pr-sheet c2" id="sh2"><rect x="10" y="18" width="380" height="52" rx="3"/><text x="372" y="34">copy 2</text><g class="pr-dots" id="d2"></g></g>
-              <g class="pr-sheet c1" id="sh1"><rect x="10" y="18" width="380" height="52" rx="3"/><text x="372" y="34">copy 1</text><g class="pr-dots" id="d1"></g></g>
-              <g class="pr-sheet top" id="sh0"><rect x="10" y="18" width="380" height="52" rx="3"/><text x="372" y="34">top copy</text><g class="pr-dots" id="d0"></g></g>
+              <g class="pr-sheet c2" id="sh2"><rect x="10" y="18" width="400" height="52" rx="3"/><text x="404" y="34">copy 2</text><g class="pr-dots" id="d2"></g></g>
+              <g class="pr-sheet c1" id="sh1"><rect x="10" y="18" width="400" height="52" rx="3"/><text x="404" y="34">copy 1</text><g class="pr-dots" id="d1"></g></g>
+              <g class="pr-sheet top" id="sh0"><rect x="10" y="18" width="400" height="52" rx="3"/><text x="404" y="34">top copy</text><g class="pr-dots" id="d0"></g></g>
               <rect class="pr-ribbon" x="0" y="${Y0 - 6}" width="420" height="${7 * D + 8}" id="rib"/>
               <g id="head"><rect class="pr-head" x="-9" y="${Y0 - 16}" width="18" height="${7 * D + 30}" rx="3"/>${[0, 1, 2, 3, 4, 5, 6].map((y) => `<rect class="pr-pin" data-y="${y}" x="-3" y="${Y0 + y * D - 2}" width="6" height="3"/>`).join('')}</g>
               <text class="pr-clack" id="clack" x="0" y="${Y0 + 7 * D + 30}">CLACK!</text>
@@ -120,7 +120,7 @@ FD.add({
           </div>
         </div>
       </div>`;
-    const root = el.querySelector('.pr'), $ = (s) => root.querySelector(s);
+    const root = el.querySelector('.prn'), $ = (s) => root.querySelector(s);
     const NS = 'http://www.w3.org/2000/svg';
     let dead = false;
     const runs = { dot: 0, ink: 0, laser: 0 };
